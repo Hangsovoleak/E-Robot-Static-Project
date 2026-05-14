@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'; // Import here
 import Footer from './components/Footer'; // Import here
 import AboutUs from './pages/AboutUs';
 import Goals from './pages/Goals';
+import Events from './pages/Events'
 
 function App() {
   return (
@@ -18,11 +19,11 @@ function App() {
             <Route path="/" element={<AboutUs />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/goals" element={<Goals />} />
-            {/* 
+            
             <Route path="/events" element={<Events />} />
-            <Route path="/contents" element={<Contents />} />
-            <Route path="/sponsors" element={<Sponsors />} /> 
-            */}
+            {/* <Route path="/contents" element={<Contents />} />
+            <Route path="/sponsors" element={<Sponsors />} />  */}
+           
           </Routes>
         </main>
 

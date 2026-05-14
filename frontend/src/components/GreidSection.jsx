@@ -2,9 +2,21 @@ import { NotebookTabs, Cpu, Route } from 'lucide-react';
 
 const GridSection = () => {
   const cardData = [
-    { icon: <NotebookTabs className="w-8 h-8" />, title: "CURRICULUM", desc: "Our curriculum is designed to equip students with the skills and knowledge they need to succeed in the modern world." },
-    { icon: <Cpu className="w-8 h-8" />, title: "ECOSYSTEM", desc: "A thriving community of learners and educators." },
-    { icon: <Route className="w-8 h-8" />, title: "CLEAR LEARNING PATHWAY", desc: "A clear and structured approach to learning that guides students from beginner to expert." }
+    { 
+      icon: <NotebookTabs className="w-8 h-8" />, 
+      title: "កម្មវិធីសិក្សា", 
+      desc: "កម្មវិធីសិក្សារបស់យើងត្រូវបានរៀបចំឡើងដើម្បីផ្ដល់នូវជំនាញ និងចំណេះដឹងបច្ចេកវិទ្យាដែលសិស្សានុសិស្សត្រូវការសម្រាប់ការជោគជ័យក្នុងយុគសម័យទំនើប។" 
+    },
+    { 
+      icon: <Cpu className="w-8 h-8" />, 
+      title: "ប្រព័ន្ធអេកូឡូស៊ី", 
+      desc: "ការបង្កើតសហគមន៍ដ៏រស់រវើកមួយសម្រាប់អ្នកសិក្សា និងអ្នកអប់រំ ដើម្បីផ្លាស់ប្តូរបទពិសោធន៍ និងរីកចម្រើនជាមួយគ្នា។" 
+    },
+    { 
+      icon: <Route className="w-8 h-8" />, 
+      title: "វិថីសិក្សាច្បាស់លាស់", 
+      desc: "ការរៀបចំផ្លូវដើរ និងរចនាសម្ព័ន្ធសិក្សាដែលជួយណែនាំសិស្សានុសិស្សតាំងពីកម្រិតដំបូង រហូតក្លាយជាអ្នកជំនាញ។" 
+    }
   ];
 
   return (

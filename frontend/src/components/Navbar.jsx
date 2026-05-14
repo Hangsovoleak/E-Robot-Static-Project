@@ -20,21 +20,41 @@ function Navbar() {
                 </Link>
 
                 {/* Desktop Menu */}
-                <ul className="hidden md:flex items-center gap-12 lg:gap-16 text-xs font-medium">
-                    <li><Link to="/about" className="hover:text-[#FF383C] font-bold transition-all">About Us</Link></li>
-                    <li><Link to="/goals" className="hover:text-[#FF383C] font-bold transition-all">Goals</Link></li>
-                    <li><Link to="/events" className="hover:text-[#FF383C] font-bold transition-all">Events</Link></li>
-                    <li><Link to="/contents" className="hover:text-[#FF383C] font-bold transition-all">Contents</Link></li>
-                    <li><Link to="/sponsors" className="hover:text-[#FF383C] font-bold transition-all">Sponsors</Link></li>
+                <ul className="hidden md:flex items-center gap-6 lg:gap-10 text-xs font-medium">
+                    <li>
+                        <Link to="/about" className="px-4 py-2 transition-all duration-300 rounded-xl hover:text-[#FF383C] hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg border border-transparent hover:border-white/20 font-bold">
+                            អំពី E-ROBOT
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/goals" className="px-4 py-2 transition-all duration-300 rounded-xl hover:text-[#FF383C] hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg border border-transparent hover:border-white/20 font-bold">
+                            គោលដៅ
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/events" className="px-4 py-2 transition-all duration-300 rounded-xl hover:text-[#FF383C] hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg border border-transparent hover:border-white/20 font-bold">
+                            ព្រឹត្តិការណ៍សំខាន់ៗ
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/contents" className="px-4 py-2 transition-all duration-300 rounded-xl hover:text-[#FF383C] hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg border border-transparent hover:border-white/20 font-bold">
+                            មាតិកាសិក្សាផ្សេងៗ
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/sponsors" className="px-4 py-2 transition-all duration-300 rounded-xl hover:text-[#FF383C] hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg border border-transparent hover:border-white/20 font-bold">
+                            ការឧបត្ថម្ភ​ និង ការទទូលស្គាល់
+                        </Link>
+                    </li>
                 </ul>
 
                 {/* Right Actions (Desktop) */}
                 <div className="hidden md:flex items-center">
                     <button className="bg-[#FF383C] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#FF383C]/80 transition-all active:scale-95">
-                        Donate
+                        ឧបត្ថម្ភមកពួកយើង
                     </button>
                     <button className="ml-4 bg-[#192048] text-white text-xs font-bold px-4 py-2 rounded-full hover:bg-[#192048]/80 transition-all active:scale-95">
-                        Join Us
+                        ចូលរួមជាមួយពួកយើង
                     </button>
                 </div>
 

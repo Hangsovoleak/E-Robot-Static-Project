@@ -4,20 +4,20 @@ import {Terminal, Lightbulb, Rocket} from 'lucide-react';
 const cardData = [
   {
     id: 1,
-    title: "TECHNOLOGY MASTERY",
-    description: "Building foundational skills for the digital age.",
+    title: "ជំនាញបច្ចេកវិទ្យាស្ទាត់ជំនាញ",
+    description: "កសាងមូលដ្ឋានគ្រឹះឌីជីថលដ៏រឹងមាំសម្រាប់សិស្សានុសិស្ស។",
     sticker: <Terminal className="h-6 w-6 text-white" />
   },
   {
     id: 2,
-    title: "ENTREPRENEURIAL MINDSET",
-    description: "Fostering innovation and creative problem-solving.",
+    title: "ផ្នត់គំនិតសហគ្រិនភាព",
+    description: "ជំរុញការបង្កើតថ្មី និងការដោះស្រាយបញ្ហាតាមរយៈភាពច្នៃប្រឌិត។",
     sticker: <Lightbulb color="#ffffff" />
   },
   {
     id: 3,
-    title: "FUTURE-READY SKILLS",
-    description: "Preparing students for tomorrow's challenges",
+    title: "ជំនាញសម្រាប់ថ្ងៃអនាគត",
+    description: "ត្រៀមលក្ខណៈឱ្យសិស្សានុសិស្សរួចរាល់សម្រាប់បញ្ហាប្រឈមនៃពិភពលោកទំនើប។",
     sticker: <Rocket color="#ffffff" />
   }
 ];

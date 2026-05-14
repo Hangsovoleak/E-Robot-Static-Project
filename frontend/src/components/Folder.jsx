@@ -3,7 +3,7 @@ import React from 'react';
 const Folder = ({ imgSrc, title }) => {
   return (
     /* Removed h-full to allow the folder to wrap the image height naturally on mobile */
-    <div className="relative w-full group cursor-pointer mt-12 md:mt-16 p-4 md:p-8">
+    <div className="relative w-full group cursor-pointer mt-12 md:mt-16 p-4 md:p-8 hover:scale-105 transition-transform duration-300 min-h-[160px]">
       
       {/* Folder Tab: Adjusted width and position for mobile */}
       <div 

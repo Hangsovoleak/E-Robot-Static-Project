@@ -28,7 +28,7 @@ function AboutUs() {
                         <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 backdrop-blur-md rounded-full px-4 py-1.5 md:px-5 md:py-2">
                             <Satellite className="w-3 h-3 md:w-4 md:h-4 text-[#192048]/80" />
                             <span className="text-xs md:text-sm font-medium">
-                                Excellence in Technology Education
+                                ឧត្តមភាពក្នុងការអប់រំបច្ចេកវិទ្យា
                             </span>
                         </div>
 
@@ -38,7 +38,7 @@ function AboutUs() {
                         </p>
 
                         <p className="mt-4 text-sm md:text-2xl font-semibold uppercase text-white/90">
-                            The universe of us is loving and curiosity
+                            THE UNIVERSE OF US IS LOVING AND CURIOSITY
                         </p>
 
                         <p className="mt-6 text-sm md:text-lg leading-relaxed md:leading-8 text-white/80 max-w-2xl">
@@ -47,7 +47,7 @@ function AboutUs() {
                         </p>
 
                         <button className="mt-8 inline-flex items-center gap-3 bg-[#222b5d]/90 hover:bg-[#192048] text-white text-xs md:text-sm font-bold py-3 px-6 md:px-7 rounded-full transition-all duration-300 hover:translate-x-2">
-                            View Goals
+                            មើលគោលដៅរបស់យើង
                             <span>→</span>
                         </button>
                     </div>
@@ -60,36 +60,34 @@ function AboutUs() {
                 {/* WHAT WE ARE - Responsive Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start mb-16">
                     <div className="mt-8 md:mt-24">
-                        <p className="text-[#192048] text-2xl md:text-4xl font-black mb-6 md:mb-10 uppercase tracking-tight">
-                            WHAT WE ARE KNOWS US
+                        <p className="text-[#192048] text-2xl md:text-4xl font-black mb-6 md:mb-12 uppercase tracking-tight">
+                            ស្វែងយល់អំពីពួកយើង
                         </p>
                         <p className="text-black text-base md:text-lg leading-relaxed max-w-md">
-                            We do what student need to know, need to learn, need to hear. We are a team whose can change their life up to growth for their talents
+                            ពួកយើងធ្វើអ្វីដែលសិស្សានុសិស្សគួរដឹង គួររៀន និងគួរស្វែងយល់។ យើងគឺជាក្រុមការងារដែលអាចផ្លាស់ប្តូរជីវិត និងជួយឱ្យពួកគេរីកចម្រើនតាមរយៈទេពកោសល្យរៀងៗខ្លួន។
                         </p>
                     </div>
                     <CardList />
                 </div>
 
                 {/* HOW YOU CAN KNOWS - Responsive Timeline */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center my-20 md:my-32">
+                    
+                    {/* The Timeline (Shows 2nd on mobile, 1st on Desktop) */}
                     <div className="relative order-2 lg:order-1">
-                        {/* The Vertical Line - Centered relative to the 10/12 width of the circles */}
+                        {/* The Vertical Line */}
                         <div className="absolute left-5 md:left-6 top-5 bottom-5 w-[3px] md:w-[4px] bg-[#192048]"></div>
                         
                         <div className="space-y-12 md:space-y-16">
                             {[
-                                { title: "FOUNDATION BUILDING", desc: "Core technology principles and digital literacy" },
-                                { title: "SKILL DEVELOPMENT", desc: "Hands-on programming and project-based learning" },
-                                { title: "INNOVATION & ENTREPRENEURSHIP", desc: "Creative thinking and business acumen development" }
+                                { title: "ការកសាងមូលដ្ឋានគ្រឹះ", desc: "គោលការណ៍បច្ចេកវិទ្យាសំខាន់ៗ និងចំណេះដឹងឌីជីថល" },
+                                { title: "ការអភិវឌ្ឍជំនាញ", desc: "ការរៀនតាមរយៈការអនុវត្តផ្ទាល់លើការសរសេរកម្មវិធី និងការធ្វើគម្រោង" },
+                                { title: "នវានុវត្តន៍ និងសហគ្រិនភាព", desc: "ការបណ្តុះការគិតបែបច្នៃប្រឌិត និងការអភិវឌ្ឍជំនាញធុរកិច្ច" }
                             ].map((step, index) => (
                                 <div key={index} className="relative flex items-start gap-6 md:gap-8 group">
-                                    
-                                    {/* Circle Container - Ensuring fixed width helps line alignment */}
                                     <div className="relative flex items-center justify-center shrink-0 w-10 h-10 md:w-12 md:h-12">
                                         <div className="w-full h-full bg-[#ff413c] rounded-full z-10 transition-transform group-hover:scale-110 shadow-lg"></div>
                                     </div>
-
-                                    {/* Text Content - Adjusted margin to align with the top of the circle */}
                                     <div className="pt-1 md:pt-2">
                                         <h4 className="text-[#192048] font-black text-lg md:text-xl leading-tight">
                                             {step.title}
@@ -103,38 +101,36 @@ function AboutUs() {
                         </div>
                     </div>
 
-                    <div className="lg:pl-10 order-1 lg:order-2">
+                    {/* The Text (Shows 1st on mobile, 2nd on Desktop) */}
+                    {/* Increased mb-16 for mobile to separate from timeline below it */}
+                    <div className="lg:pl-10 order-1 lg:order-2 mb-16 lg:mb-0">
                         <p className="text-[#192048] text-2xl md:text-4xl font-black mb-6 uppercase tracking-tight">
-                            HOW YOU CAN KNOWS ABOUT US
+                            តើអ្នកអាចស្គាល់ពួកយើងតាមរបៀបណា?
                         </p>
                         <p className="text-black text-base md:text-lg leading-relaxed mb-6">
-                            The pioneer of a new educational path in technology and entrepreneurship that bridges 
-                            students to their best potential of tomorrow.
+                            E-ROBOT គឺជាអ្នកត្រួសត្រាយផ្លូវនៃវិថីអប់រំថ្មីក្នុងវិស័យបច្ចេកវិទ្យា និងសហគ្រិនភាព ដែលតភ្ជាប់សិស្សានុសិស្សទៅកាន់សក្តានុពលដ៏ល្អបំផុតសម្រាប់ថ្ងៃអនាគតរបស់ពួកគេ។
                         </p>
-                        <button className="text-[#192048] font-black flex items-center gap-2 hover:translate-x-2 transition-transform text-sm md:text-base">
-                            detail more <span className="text-xl">→</span>
-                        </button>
                     </div>
                 </div>
                         
                 {/* Why E-ROBOT Section */}
                 <div className="mt-24">
                     <p className="text-center text-[#192048] text-2xl md:text-4xl font-bold mb-10 uppercase tracking-tight">
-                        why E-ROBOT 
+                        ហេតុអ្វីត្រូវជ្រើសរើស E-ROBOT?
                     </p>
                     <GridSection />
                 </div>
 
-                {/* Folder Section - Height adjusted for mobile */}
+                {/* Folder Section */}
                 <div className="min-h-[50vh] md:min-h-screen w-full flex items-center justify-center bg-[#f9f9f9] py-10">
                     <div className="w-full max-w-sm md:max-w-none px-4">
-                        <Folder imgSrc={Image2} title="Volunteer Memories" />
+                        <Folder imgSrc={Image2} title="ការចងចាំរបស់អ្នកស្ម័គ្រចិត្ត" />
                     </div>
                 </div>
                 
                 {/* Feedback Section */}
                 <div className="text-center text-[#192048] text-2xl md:text-4xl font-bold mb-8 md:mb-12 uppercase tracking-tight mt-10">
-                    WHAT OUR VOLUNTEER SAYS ABOUT US
+                    ចំណាប់អារម្មណ៍របស់អ្នកស្ម័គ្រចិត្ត
                 </div>
                 <GridFeedback />
 

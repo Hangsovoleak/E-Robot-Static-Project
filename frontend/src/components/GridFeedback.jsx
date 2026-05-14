@@ -4,21 +4,21 @@ const GridFeedback = () => {
   const feedbacks = [
     {
       name: "RORN HANGSOVOLEAK",
-      university: "Royal University of Phnom Penh",
+      university: "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",
       image: "https://i.pinimg.com/736x/54/f8/e5/54f8e5d2ffd42936c79315012a560e03.jpg",
-      text: "I am a volunteer as Teacher teaching Scratch and Arduino to students can hear, can learned about technologies. I am very appropriated to myself that I can join this opportunity."
+      text: "ខ្ញុំជាអ្នកស្ម័គ្រចិត្តផ្នែកបណ្តុះបណ្តាលគ្រូលើកម្មវិធី Scratch និង Arduino ដើម្បីឱ្យសិស្សានុសិស្សអាចសិក្សាពីបច្ចេកវិទ្យា។ ខ្ញុំមានសេចក្តីរីករាយក្នុងជួយចែករំលែកចំណេះដឹងទាំងនេះទៅកាន់ពួកគេ។"
     },
     {
       name: "HENG LYHORNG",
-      university: "Royal University of Phnom Penh",
+      university: "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",
       image: "https://i.pinimg.com/736x/fd/a8/26/fda8264e314ed532889eb26fa5eb40e4.jpg",
-      text: "I am a volunteer as Teacher teaching Scratch and Arduino to students can hear, can learned about technologies. I am very appropriated to myself that I can join this opportunity."
+      text: "ខ្ញុំជាអ្នកស្ម័គ្រចិត្តផ្នែកផលិតមាតិកា (Content Creator) ដើម្បីជួយឱ្យសិស្សានុសិស្សអាចស្វែងយល់កាន់តែច្បាស់ពីបច្ចេកវិទ្យា។ ខ្ញុំចូលចិត្តក្នុងការចែករំលែកបទពិសោធន៍ថ្មីៗដល់យុវជនជំនាន់ក្រោយ។"
     },
     {
       name: "LONG PORTY",
-      university: "Royal University of Phnom Penh",
+      university: "សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ",
       image: "https://i.pinimg.com/736x/ca/3a/ee/ca3aee1248c25c652e338cbba6e372ad.jpg",
-      text: "I am a volunteer as Teacher teaching Scratch and Arduino to students can hear, can learned about technologies. I am very appropriated to myself that I can join this opportunity."
+      text: "ខ្ញុំជាអ្នកស្ម័គ្រចិត្តផ្នែកទីផ្សារឌីជីថល (Digital Marketer) ក្នុងការផ្សព្វផ្សាយគម្រោងរបស់យើងទៅកាន់សិស្សានុសិស្ស ដើម្បីឱ្យពួកគេទទួលបានឱកាសសិក្សាពីបច្ចេកវិទ្យាទំនើបៗ។"
     }
   ];
 

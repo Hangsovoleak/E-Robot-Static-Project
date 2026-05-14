@@ -21,7 +21,7 @@ function Footer() {
                     </div>
                     
                     <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-                        ចូលរួមជាមួយយើងដើម្បីកុមារកម្ពុជា​ និងជាចំំណែកធំនៃការអប់រំនិងអភិវឌ្ឍន៍។
+                        ចូលរួមជាមួយយើងដើម្បីកុមារកម្ពុជា និងជាផ្នែកមួយនៃការជំរុញការអប់រំផ្នែកបច្ចេកវិទ្យាឱ្យកាន់តែរីកចម្រើន។
                     </p>
 
                     <div className="flex items-center gap-4">
@@ -33,33 +33,31 @@ function Footer() {
                         </a>
                         <div className="flex items-center gap-2 p-2 bg-white/10 rounded-full transition-colors">
                             <img src={Location} alt="Location" className="w-6 h-6" />
-                            <span className="text-xs pr-2">Phnom Penh, Cambodia</span>
+                            <span className="text-xs pr-2">ភ្នំពេញ, ប្រទេសកម្ពុជា</span>
                         </div>
                     </div>
                 </div>
 
                 {/* Middle Section: Quick Links */}
                 <div className="flex flex-col gap-4">
-                    <p className="text-xl font-bold uppercase tracking-widest text-white/40">Navigation</p>
+                    <p className="text-xl font-bold uppercase tracking-widest text-white/40">មាតិកា</p>
                     <ul className="space-y-2 text-white/80 text-sm">
-                        <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">Goals</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">Events</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">Contents</a></li>
-                        <li><a href="#" className="hover:text-white transition-colors">Sponsors</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">អំពីយើង</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">គោលដៅ</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">ព្រឹត្តិការណ៍</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">មាតិកាសិក្សា</a></li>
+                        <li><a href="#" className="hover:text-white transition-colors">ម្ចាស់ឧបត្ថម្ភ</a></li>
                     </ul>
                 </div>
 
                 {/* Right Section: Contact Info */}
                 <div className="flex flex-col gap-4">
-                    <p className="text-xl font-bold uppercase tracking-widest text-white/40">Get in Touch</p>
+                    <p className="text-xl font-bold uppercase tracking-widest text-white/40">ទំនាក់ទំនង</p>
                     <div className="space-y-4 text-sm">
                         <div className="flex items-center gap-3 text-white/80">
-                            
                             <span>erobotkh.org</span>
                         </div>
                         <div className="flex items-center gap-3 text-white/80">
-                            
                             <span>+855 10 567 014</span>
                         </div>
                     </div>
