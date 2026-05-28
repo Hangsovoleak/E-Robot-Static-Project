@@ -1,4 +1,19 @@
 @import "tailwindcss";
+@import "tailwindcss";
+
+/* 1. Import the Fontsource files */
+@import "@fontsource/kantumruy-pro/400.css";
+@import "@fontsource/kantumruy-pro/500.css";
+@import "@fontsource/kantumruy-pro/700.css";
+
+/* 2. Register the font family in Tailwind v4 theme */
+@theme {
+  --font-kantumruy: "Kantumruy Pro", sans-serif;
+  
+  /* OPTIONAL: If you want it to be the default font everywhere 
+     so you don't have to type 'font-kantumruy' on every element: */
+  /* --font-sans: "Kantumruy Pro", sans-serif; */
+}
 
 :root {
   --text: #6b6375;
@@ -30,6 +45,23 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,146 +1,173 @@
-import Navbar from '../components/Navbar'
-import Image1 from '../assets/ImageBackground.png'
-import Image2 from '../assets/image2.png'
-import Footer from '../components/Footer'
-import CardList from '../components/cardList'
-import Folder from '../components/Folder'
-import GridSection from '../components/GreidSection'
-import GridFeedback from '../components/GridFeedback'
-import Subscribe from '../components/Subscribe'
+import { Link } from 'react-router-dom';
+import Image1 from '../assets/ImageBackground.png';
+import Image2 from '../assets/image2.png';
+import CardList from '../components/cardList';
+import Folder from '../components/Folder';
+import GridSection from '../components/GreidSection';
+import GridFeedback from '../components/GridFeedback';
+import Subscribe from '../components/Subscribe';
 
-import { Satellite } from 'lucide-react'
+import { Satellite, ArrowRight, Compass, Users, Sparkles } from 'lucide-react';
 
 function AboutUs() {
     return (
-        <div className="min-h-screen bg-white/90 w-full overflow-x-hidden">
+        <div className="min-h-screen bg-[#f8fafc] w-full overflow-x-hidden antialiased">
 
-            {/* Hero Section */}
-            <section className="relative h-screen w-full overflow-hidden p-4 md:p-8">
+            {/* =========================
+                HERO SECTION (Optimized for Mobile Viewports)
+            ========================== */}
+            <section className="relative min-h-screen lg:h-screen w-full overflow-hidden px-4 sm:px-6 md:px-10 lg:px-16 flex items-center">
                 <img
                     src={Image1}
-                    alt="Background"
+                    alt="E-Robot Hero Canvas Background"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/50" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-[#192048]/40" />
 
-                <div className="relative z-10 flex items-center h-full px-4 md:px-16">
+                <div className="relative z-10 w-full max-w-7xl mx-auto py-24 lg:py-0">
                     <div className="max-w-4xl text-white">
-                        <div className="inline-flex items-center gap-2 bg-white/20 border border-white/30 backdrop-blur-md rounded-full px-4 py-1.5 md:px-5 md:py-2">
-                            <Satellite className="w-3 h-3 md:w-4 md:h-4 text-[#192048]/80" />
-                            <span className="text-xs md:text-sm font-medium">
+                        
+                        {/* Friendly Pill Tag */}
+                        <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur-md rounded-full px-4 py-1.5 shadow-sm">
+                            <Satellite className="w-4 h-4 text-[#ff383c] animate-pulse" />
+                            <span className="text-xs md:text-sm font-bold tracking-wide text-white/95">
                                 ឧត្តមភាពក្នុងការអប់រំបច្ចេកវិទ្យា
                             </span>
                         </div>
 
-                        {/* Responsive Text: Smaller on mobile, Large on Desktop */}
-                        <p className="mt-6 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-none tracking-tight text-white">
-                            E-ROBOT
+                        {/* Responsive Typography Title with Line Safety Height */}
+                        <p className="mt-6 text-6xl sm:text-7xl md:text-8xl lg:text-[7rem] font-black leading-tight tracking-tight text-white m-0">
+                          E-ROBOT
                         </p>
 
-                        <p className="mt-4 text-sm md:text-2xl font-semibold uppercase text-white/90">
+                        <p className="mt-2 text-xs sm:text-sm md:text-xl font-black uppercase tracking-widest text-[#ffcbc5] max-w-xl">
                             THE UNIVERSE OF US IS LOVING AND CURIOSITY
                         </p>
 
-                        <p className="mt-6 text-sm md:text-lg leading-relaxed md:leading-8 text-white/80 max-w-2xl">
+                        <p className="mt-6 text-sm sm:text-base lg:text-lg leading-relaxed md:leading-8 text-white/80 max-w-2xl font-medium">
                             ការចូលរួមអភិវឌ្ឍន៍សង្គម គឺជាការរៀបចំអនាគតសម្រាប់មនុស្សជំនាន់ក្រោយ។
-                            យើងជឿជាក់ថា ការអប់រំគឺជាគន្លងដ៏សំខាន់ក្នុងការបង្កើតសង្គមដែលមានការរីកចម្រើន។
+                            យើងជឿជាក់ថា ការអប់រំគឺជាគន្លងដ៏សំខាន់ក្នុងការបង្កើតសង្គមដែលមានការរីកចម្រើន និងនវានុវត្តន៍។
                         </p>
 
-                        <button className="mt-8 inline-flex items-center gap-3 bg-[#222b5d]/90 hover:bg-[#192048] text-white text-xs md:text-sm font-bold py-3 px-6 md:px-7 rounded-full transition-all duration-300 hover:translate-x-2">
-                            មើលគោលដៅរបស់យើង
-                            <span>→</span>
-                        </button>
+                        {/* CTA Links to the Goals page styled earlier */}
+                        <div className="mt-8 flex flex-wrap gap-4">
+                            <Link 
+                                to="/about" 
+                                className="inline-flex items-center justify-center gap-2 bg-[#ff383c] hover:bg-[#ff646c] text-white text-xs md:text-sm font-bold min-h-[48px] px-6 md:px-8 rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 group shadow-lg no-underline"
+                            >
+                                មើលគោលដៅរបស់យើង
+                                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
+                
+                {/* Decorative bottom boundary arc wave curve */}
+                <div className="absolute bottom-0 left-0 right-0 h-12 bg-[#f8fafc] rounded-t-[2rem] hidden md:block" />
             </section>
 
-            {/* Main Content Section */}
-            <section className="bg-[#f9f9f9] py-12 md:py-20 px-4 md:px-24">
-                
-                {/* WHAT WE ARE - Responsive Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 items-start mb-16">
-                    <div className="mt-8 md:mt-24">
-                        <p className="text-[#192048] text-2xl md:text-4xl font-black mb-6 md:mb-12 uppercase tracking-tight">
-                            ស្វែងយល់អំពីពួកយើង
-                        </p>
-                        <p className="text-black text-base md:text-lg leading-relaxed max-w-md">
-                            ពួកយើងធ្វើអ្វីដែលសិស្សានុសិស្សគួរដឹង គួររៀន និងគួរស្វែងយល់។ យើងគឺជាក្រុមការងារដែលអាចផ្លាស់ប្តូរជីវិត និងជួយឱ្យពួកគេរីកចម្រើនតាមរយៈទេពកោសល្យរៀងៗខ្លួន។
-                        </p>
-                    </div>
-                    <CardList />
-                </div>
-
-                {/* HOW YOU CAN KNOWS - Responsive Timeline */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center my-20 md:my-32">
+            {/* =========================
+                MAIN LAYOUT INNER WRAPPER
+            ========================== */}
+            <section className="py-12 md:py-20 px-4 sm:px-6 md:px-10 lg:px-16">
+                <div className="max-w-7xl mx-auto">
                     
-                    {/* The Timeline (Shows 2nd on mobile, 1st on Desktop) */}
-                    <div className="relative order-2 lg:order-1">
-                        {/* The Vertical Line */}
-                        <div className="absolute left-5 md:left-6 top-5 bottom-5 w-[3px] md:w-[4px] bg-[#192048]"></div>
-                        
-                        <div className="space-y-12 md:space-y-16">
-                            {[
-                                { title: "ការកសាងមូលដ្ឋានគ្រឹះ", desc: "គោលការណ៍បច្ចេកវិទ្យាសំខាន់ៗ និងចំណេះដឹងឌីជីថល" },
-                                { title: "ការអភិវឌ្ឍជំនាញ", desc: "ការរៀនតាមរយៈការអនុវត្តផ្ទាល់លើការសរសេរកម្មវិធី និងការធ្វើគម្រោង" },
-                                { title: "នវានុវត្តន៍ និងសហគ្រិនភាព", desc: "ការបណ្តុះការគិតបែបច្នៃប្រឌិត និងការអភិវឌ្ឍជំនាញធុរកិច្ច" }
-                            ].map((step, index) => (
-                                <div key={index} className="relative flex items-start gap-6 md:gap-8 group">
-                                    <div className="relative flex items-center justify-center shrink-0 w-10 h-10 md:w-12 md:h-12">
-                                        <div className="w-full h-full bg-[#ff413c] rounded-full z-10 transition-transform group-hover:scale-110 shadow-lg"></div>
-                                    </div>
-                                    <div className="pt-1 md:pt-2">
-                                        <h4 className="text-[#192048] font-black text-lg md:text-xl leading-tight">
-                                            {step.title}
-                                        </h4>
-                                        <p className="text-gray-500 font-medium text-xs md:text-sm mt-1">
-                                            {step.desc}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
+                    {/* WHAT WE ARE - Modern Presentation Card Frame Grid */}
+                    <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-8 lg:gap-16 items-start mb-24">
+                        <div className="lg:sticky lg:top-24 rounded-[2rem] p-6 sm:p-8">
+                            <p className="text-sm uppercase tracking-[0.35em] text-[#ff383c] font-black">តើពួកយើងជានរណា?</p>
+                            <p className="text-[#192048] text-2xl md:text-4xl font-black mt-3 mb-4 uppercase tracking-tight m-0">
+                                ស្វែងយល់អំពីពួកយើង
+                            </p>
+                            <p className="text-slate-600 text-sm sm:text-base leading-relaxed m-0 font-medium">
+                                ពួកយើងធ្វើអ្វីដែលសិស្សានុសិស្សគួរដឹង គួររៀន និងគួរស្វែងយល់។ យើងគឺជាក្រុមការងារដែលអាចផ្លាស់ប្តូរជីវិត និងជួយឱ្យពួកគេរីកចម្រើនតាមរយៈទេពកោសល្យរៀងៗខ្លួនក្នុងវិស័យបច្ចេកវិទ្យា។
+                            </p>
+                        </div>
+                        <div className="w-full">
+                            <CardList />
                         </div>
                     </div>
 
-                    {/* The Text (Shows 1st on mobile, 2nd on Desktop) */}
-                    {/* Increased mb-16 for mobile to separate from timeline below it */}
-                    <div className="lg:pl-10 order-1 lg:order-2 mb-16 lg:mb-0">
-                        <p className="text-[#192048] text-2xl md:text-4xl font-black mb-6 uppercase tracking-tight">
-                            តើអ្នកអាចស្គាល់ពួកយើងតាមរបៀបណា?
-                        </p>
-                        <p className="text-black text-base md:text-lg leading-relaxed mb-6">
-                            E-ROBOT គឺជាអ្នកត្រួសត្រាយផ្លូវនៃវិថីអប់រំថ្មីក្នុងវិស័យបច្ចេកវិទ្យា និងសហគ្រិនភាព ដែលតភ្ជាប់សិស្សានុសិស្សទៅកាន់សក្តានុពលដ៏ល្អបំផុតសម្រាប់ថ្ងៃអនាគតរបស់ពួកគេ។
-                        </p>
-                    </div>
-                </div>
-                        
-                {/* Why E-ROBOT Section */}
-                <div className="mt-24">
-                    <p className="text-center text-[#192048] text-2xl md:text-4xl font-bold mb-10 uppercase tracking-tight">
-                        ហេតុអ្វីត្រូវជ្រើសរើស E-ROBOT?
-                    </p>
-                    <GridSection />
-                </div>
+                    {/* HOW YOU CAN KNOW - Fluid Mobile Interactive Timeline Grid */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center my-24">
+                        <div className="w-full">
+                            <div className="max-w-xl">
+                                <p className="text-sm uppercase tracking-[0.35em] text-[#ff383c] font-black">វិធីសាស្ត្រសិក្សា</p>
+                                <p className="text-[#192048] text-2xl md:text-4xl font-black mt-3 mb-4 uppercase tracking-tight m-0">
+                                    តើអ្នកអាចស្គាល់ពួកយើងតាមរបៀបណា?
+                                </p>
+                                <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-medium m-0">
+                                    E-ROBOT គឺជាអ្នកត្រួសត្រាយផ្លូវនៃវិថីអប់រំថ្មីក្នុងវិស័យបច្ចេកវិទ្យា និងសហគ្រិនភាព ដែលតភ្ជាប់សិស្សានុសិស្សទៅកាន់សក្តានុពលដ៏ល្អបំផុតសម្រាប់ថ្ងៃអនាគតរបស់ពួកគេ។
+                                </p>
+                            </div>
+                        </div>
 
-                {/* Folder Section */}
-                <div className="min-h-[50vh] md:min-h-screen w-full flex items-center justify-center bg-[#f9f9f9] py-10">
-                    <div className="w-full max-w-sm md:max-w-none px-4">
-                        <Folder imgSrc={Image2} title="ការចងចាំរបស់អ្នកស្ម័គ្រចិត្ត" />
+                        {/* Interactive Steps Blocks */}
+                        <div className="relative pl-2 sm:pl-4">
+                            <div className="absolute left-[23px] md:left-[27px] top-4 bottom-4 w-[2px] bg-slate-200" />
+                            
+                            <div className="space-y-4 md:space-y-8">
+                                {[
+                                    { title: "ការកសាងមូលដ្ឋានគ្រឹះ", desc: "គោលការណ៍បច្ចេកវិទ្យាសំខាន់ៗ និងចំណេះដឹងឌីជីថលទូទៅ។", icon: <Compass className="w-4 h-4 text-white" /> },
+                                    { title: "ការអភិវឌ្ឍជំនាញ", desc: "ការរៀនតាមរយៈការអនុវត្តផ្ទាល់លើការសរសេរកម្មវិធី និងការធ្វើគម្រោងជាក់ស្តែង។", icon: <Users className="w-4 h-4 text-white" /> },
+                                    { title: "នវានុវត្តន៍ និងសហគ្រិនភាព", desc: "ការបណ្តុះការគិតបែបច្នៃប្រឌិត និងការអភិវឌ្ឍជំនាញធុរកិច្ចឌីជីថល។", icon: <Sparkles className="w-4 h-4 text-white" /> }
+                                ].map((step, index) => (
+                                    <div key={index} className="relative flex items-start gap-4 md:gap-6 group rounded-2xl bg-white p-4 border border-slate-100 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-0.5">
+                                        <div className="relative flex items-center justify-center shrink-0 w-8 h-8 rounded-full bg-[#ff383c] shadow-md z-10">
+                                            {step.icon}
+                                        </div>
+                                        <div className="pt-0.5">
+                                            <p className="text-[#192048] font-black text-base md:text-lg leading-tight m-0">
+                                                {step.title}
+                                            </p>
+                                            <p className="text-slate-500 font-medium text-xs md:text-sm mt-1 mb-0 leading-relaxed">
+                                                {step.desc}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                {/* Feedback Section */}
-                <div className="text-center text-[#192048] text-2xl md:text-4xl font-bold mb-8 md:mb-12 uppercase tracking-tight mt-10">
-                    ចំណាប់អារម្មណ៍របស់អ្នកស្ម័គ្រចិត្ត
-                </div>
-                <GridFeedback />
+                            
+                    {/* Why E-ROBOT Grid Sections Grid Component */}
+                    <div className="mt-24">
+                        <div className="max-w-2xl mx-auto text-center mb-12">
+                            <p className="text-[#192048] text-2xl md:text-4xl font-black mt-2 m-0 uppercase tracking-tight">
+                                ហេតុអ្វីត្រូវជ្រើសរើស E-ROBOT?
+                            </p>
+                        </div>
+                        <GridSection />
+                    </div>
 
-                {/* Subscribe Section */}
-                <div className="mt-10">
-                    <Subscribe />
+                    {/* Folder Gallery Wrappers — Linked to the newly designed Sharing Route */}
+                    <div className="w-full my-24">
+                        <Folder 
+                          imgSrc={Image2} 
+                          title="ការចងចាំរបស់អ្នកស្ម័គ្រចិត្ត និងដំណើរការចុះបេសកកម្មសិក្សា" 
+                          to="/sharings" 
+                        />
+                    </div>
+                    
+                    {/* Testimonial Feedbacks Review List Grid Component */}
+                    <div className="mt-24">
+                        <div className="max-w-2xl mx-auto text-center mb-12">
+                            <p className="text-[#192048] text-2xl md:text-4xl font-black mt-2 m-0 uppercase tracking-tight">
+                                ចំណាប់អារម្មណ៍របស់អ្នកស្ម័គ្រចិត្ត
+                            </p>
+                        </div>
+                        <GridFeedback />
+                    </div>
+
+                    {/* Newsletter Subscription Container Form Component */}
+                    <div className="mt-24">
+                        <Subscribe />
+                    </div>
+
                 </div>
             </section>
         </div>
-    )
+    );
 }
 
-export default AboutUs
+export default AboutUs;
